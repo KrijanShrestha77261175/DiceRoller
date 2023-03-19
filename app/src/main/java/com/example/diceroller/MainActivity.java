@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button;
     Random random = new Random();
     private TextView resultTextView;
-    private TextView resultTextView1;
+
 
 
 
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Find the TextView in the layout
         resultTextView = findViewById(R.id.textView);
-        resultTextView1 = findViewById(R.id.textView3);
+
 
         // Find the Button in the layout
         button = findViewById(R.id.rollButton);
@@ -74,11 +74,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void rollDice() {
         // Generate a random number from 1 to 6
         int dice1 = random.nextInt(6) + 1;
-        int dice2 = random.nextInt(6) + 1;
+
 
         //Update the screen with the dice roll
         resultTextView.setText("" + dice1);
-        resultTextView1.setText("" + dice2);
+
     }
 }
 
